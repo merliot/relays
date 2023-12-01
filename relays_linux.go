@@ -18,7 +18,7 @@ import (
 	"gobot.io/x/gobot/platforms/raspi"
 )
 
-//go:embed *
+//go:embed css images js template
 var fs embed.FS
 
 type targetStruct struct {

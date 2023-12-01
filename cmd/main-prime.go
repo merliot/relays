@@ -4,8 +4,8 @@ package main
 
 import (
 	"github.com/merliot/dean"
-	"github.com/merliot/hub/models/prime"
-	"github.com/merliot/hub/models/relays"
+	"github.com/merliot/prime"
+	"github.com/merliot/relays"
 )
 
 func main() {

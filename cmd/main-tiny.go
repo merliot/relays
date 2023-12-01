@@ -3,8 +3,8 @@
 package main
 
 import (
-	"github.com/meriot/dean"
-	"github.com/merliot/hub/models/relays"
+	"github.com/merliot/dean"
+	"github.com/merliot/relays"
 )
 
 var (
