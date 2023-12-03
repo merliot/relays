@@ -5,8 +5,8 @@
 package main
 
 import (
-	"github.com/merliot/relays"
 	"github.com/merliot/device/runner"
+	"github.com/merliot/relays"
 )
 
 func main() {
