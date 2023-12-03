@@ -6,11 +6,11 @@ import (
 	"strconv"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/model"
+	"github.com/merliot/device"
 )
 
 type Relays struct {
-	*model.Model
+	*device.Device
 	Relays [4]Relay
 	targetStruct
 }
@@ -26,7 +26,7 @@ var targets = []string{"demo", "rpi", "nano-rp2040"}
 func New(id, model, name string) dean.Thinger {
 	println("NEW RELAYS")
 	r := &Relays{}
-	r.Model = model.New(id, model, name, targets).(*model.Model)
+	r.Device = device.New(id, model, name, targets).(*device.Device)
 	r.targetNew()
 	return r
 }

@@ -13,7 +13,8 @@ import (
 	"syscall"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/hub/models/common"
+	"github.com/merliot/device"
+	"github.com/merliot/target"
 	"gobot.io/x/gobot/drivers/gpio"
 	"gobot.io/x/gobot/platforms/raspi"
 )
@@ -68,13 +69,13 @@ func (r *Relays) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	case "api":
 		r.api(w, req)
 	case "state":
-		common.ShowState(r.templates, w, r)
+		device.ShowState(r.templates, w, r)
 	default:
 		r.API(r.templates, w, req)
 	}
 }
 
-func (r *Relays) pins() common.GpioPins {
+func (r *Relays) pins() target.GpioPins {
 	return r.Targets["rpi"].GpioPins
 }
 

@@ -6,10 +6,10 @@ import (
 	"crypto/rand"
 	"machine"
 
-	"github.com/merliot/hub/models/common"
+	"github.com/merliot/device"
 )
 
-func (r *Relays) pins() common.GpioPins {
+func (r *Relays) pins() device.GpioPins {
 	return r.Targets["nano-rp2040"].GpioPins
 }
 
