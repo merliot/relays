@@ -21,13 +21,13 @@ type Relay struct {
 	pin   machine.Pin
 }
 
-func (r *Relay) On() {
+func (r *Relay) on() {
 	if r.pin != machine.NoPin {
 		r.pin.High()
 	}
 }
 
-func (r *Relay) Off() {
+func (r *Relay) off() {
 	if r.pin != machine.NoPin {
 		r.pin.Low()
 	}

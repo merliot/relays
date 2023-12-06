@@ -47,9 +47,9 @@ func (r *Relays) click(msg *dean.Msg) {
 	relay.State = msgClick.State
 	if r.IsMetal() {
 		if msgClick.State {
-			relay.On()
+			relay.on()
 		} else {
-			relay.Off()
+			relay.off()
 		}
 	}
 	msg.Broadcast()

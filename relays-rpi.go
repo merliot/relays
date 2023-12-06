@@ -1,35 +1,26 @@
-//go:build !tinygo
+//go:build rpi
 
 package relays
 
 import (
-	"embed"
-	"html/template"
-	"net/http"
 	"os"
 	"os/signal"
 	"strconv"
-	"strings"
 	"syscall"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/device"
 	"github.com/merliot/target"
 	"gobot.io/x/gobot/drivers/gpio"
 	"gobot.io/x/gobot/platforms/raspi"
 )
 
-//go:embed css images js template
-var fs embed.FS
-
 type targetStruct struct {
-	templates *template.Template
-	adaptor   *raspi.Adaptor
+	osStruct
+	adaptor *raspi.Adaptor
 }
 
 func (r *Relays) targetNew() {
-	r.CompositeFs.AddFS(fs)
-	r.templates = r.CompositeFs.ParseFS("template/*")
+	r.osNew()
 	r.adaptor = raspi.NewAdaptor()
 }
 
@@ -40,38 +31,21 @@ type Relay struct {
 	driver *gpio.RelayDriver
 }
 
-func (r *Relay) Start() {
+func (r *Relay) start() {
 	if r.driver != nil {
 		r.driver.Start()
 	}
 }
 
-func (r *Relay) On() {
+func (r *Relay) on() {
 	if r.driver != nil {
 		r.driver.On()
 	}
 }
 
-func (r *Relay) Off() {
+func (r *Relay) off() {
 	if r.driver != nil {
 		r.driver.Off()
-	}
-}
-
-func (r *Relays) api(w http.ResponseWriter, req *http.Request) {
-	w.Write([]byte("/api\n"))
-	w.Write([]byte("/deploy?target={target}\n"))
-	w.Write([]byte("/state\n"))
-}
-
-func (r *Relays) ServeHTTP(w http.ResponseWriter, req *http.Request) {
-	switch strings.TrimPrefix(req.URL.Path, "/") {
-	case "api":
-		r.api(w, req)
-	case "state":
-		device.ShowState(r.templates, w, r)
-	default:
-		r.API(r.templates, w, req)
 	}
 }
 
@@ -107,8 +81,8 @@ func (r *Relays) run(i *dean.Injector) {
 		if pin, ok := r.pins()[relay.Gpio]; ok {
 			rpin := strconv.Itoa(pin)
 			relay.driver = gpio.NewRelayDriver(r.adaptor, rpin)
-			relay.Start()
-			relay.Off()
+			relay.start()
+			relay.off()
 		}
 	}
 
