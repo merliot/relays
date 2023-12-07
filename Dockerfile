@@ -14,6 +14,6 @@ ARG SCHEME=https
 RUN go work use .
 RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
 
-EXPOSE 8001
+EXPOSE 8000
 
-CMD ["/relays"]
+CMD ["PORT_PRIME=8000 /relays"]
