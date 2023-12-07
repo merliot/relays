@@ -9,11 +9,11 @@ RUN go mod download
 
 COPY . ./
 
-ARG SCHEME=http
+ARG SCHEME=https
 
 RUN go work use .
 RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
 
-EXPOSE 8000
+EXPOSE 8001
 
 CMD ["/relays"]
