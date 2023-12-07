@@ -37,6 +37,8 @@ github.com/merliot/dean v0.0.0-20231207053908-77d8c28fec03 h1:l/VRDMEVw0QmCcKiUQ
 github.com/merliot/dean v0.0.0-20231207053908-77d8c28fec03/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
 github.com/merliot/device v0.0.0-20231207055258-d5ae7a108df9 h1:id8sTaf81BhveppL/Af6qBCgWpRSX4oEFWYp6Gt9Dk0=
 github.com/merliot/device v0.0.0-20231207055258-d5ae7a108df9/go.mod h1:hCpWzx9A0kIBHPm9C60fdXD1d+3nRrae5LezBlXqHb8=
+github.com/merliot/device v0.0.0-20231207063929-7f0e0d09fe1f h1:xoEHGgfvaERCeCWWo1xtG9SUhgWGz9jAvRIzHevh52A=
+github.com/merliot/device v0.0.0-20231207063929-7f0e0d09fe1f/go.mod h1:gkFHoVMrSJmZJpTv3g9cj7GCDkpk/IfnlYRUyjQidRU=
 github.com/merliot/target v0.0.0-20231207054042-652046c3a2c5 h1:76H0zIDylHVKMkJxg+G6vEM2udM+IP2h0PZkNIZPBy8=
 github.com/merliot/target v0.0.0-20231207054042-652046c3a2c5/go.mod h1:i1/DD6/2gypXhLpOBbuXBcuzUcCyHHi8GjmBtEvLsX4=
 github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
