@@ -16,4 +16,5 @@ RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
 
 EXPOSE 8000
 
-CMD ["PORT_PRIME=8000 /relays"]
+ENV PORT_PRIME=8000
+CMD ["/relays"]
