@@ -12,7 +12,7 @@ COPY . ./
 
 ARG SCHEME=https
 
-RUN go work init
+#RUN go work init
 RUN go work use .
 RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
 
