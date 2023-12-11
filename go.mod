@@ -1,12 +1,12 @@
 module github.com/merliot/relays
 
-go 1.21.0
+go 1.21.1
 
 replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3fabdc5c9680
 
 require (
 	github.com/merliot/dean v0.0.0-20231208003337-ba15b20fe511
-	github.com/merliot/device v0.0.0-20231208083935-9e0ee5c7c56c
+	github.com/merliot/device v0.0.0-20231211072545-6eb86d7e4e54
 	github.com/merliot/target v0.0.0-20231208003459-02cacc0ea0c0
 	gobot.io/x/gobot v1.16.0
 )
