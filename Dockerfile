@@ -1,6 +1,7 @@
 # syntax=docker/dockerfile:1
 
-FROM tinygo/tinygo-dev:latest
+#FROM tinygo/tinygo-dev:latest
+FROM ghcr.io/merliot/hub/hub-base:latest
 
 WORKDIR /app/relays
 
@@ -9,7 +10,7 @@ RUN go mod download
 
 COPY . ./
 
-ARG SCHEME=http
+ARG SCHEME=https
 
 RUN go work init
 RUN go work use .
