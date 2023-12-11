@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1
 
-#FROM tinygo/tinygo-dev:latest
-FROM ghcr.io/merliot/hub/hub-base:latest
+FROM tinygo/tinygo-dev:latest
+#FROM ghcr.io/merliot/hub/hub-base:latest
 
 WORKDIR /app/relays
 
@@ -12,7 +12,7 @@ COPY . ./
 
 ARG SCHEME=https
 
-#RUN go work init
+RUN go work init
 RUN go work use .
 RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
 
