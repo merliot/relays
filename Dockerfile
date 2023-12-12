@@ -10,7 +10,7 @@ RUN go mod download
 
 COPY . ./
 
-ARG SCHEME=https
+ARG SCHEME=wss
 
 #RUN go work init
 RUN go work use .
