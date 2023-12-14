@@ -1,7 +1,6 @@
 # syntax=docker/dockerfile:1
 
-#FROM tinygo/tinygo-dev:latest
-FROM ghcr.io/merliot/hub/hub-base:latest
+FROM ghcr.io/merliot/device/base
 
 WORKDIR /app/relays
 
