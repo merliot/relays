@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/merliot/device/base
+FROM ghcr.io/merliot/device/device-base:latest
 
 WORKDIR /app/relays
 
