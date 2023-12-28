@@ -1,12 +1,12 @@
 module github.com/merliot/relays
 
-go 1.21.1
+go 1.21.5
 
 replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3fabdc5c9680
 
 require (
 	github.com/merliot/dean v0.0.0-20231208003337-ba15b20fe511
-	github.com/merliot/device v0.0.0-20231212044223-ec7ddaa1fe82
+	github.com/merliot/device v0.0.0-20231228040256-d50ac1d5ae5e
 	github.com/merliot/target v0.0.0-20231208003459-02cacc0ea0c0
 	gobot.io/x/gobot v1.16.0
 )
@@ -17,6 +17,7 @@ require (
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.0.0 // indirect
 	github.com/merliot/prime v0.0.0-20231207215615-e07856129c62 // indirect
+	github.com/merliot/uf2 v0.0.0-20231228035705-76e82a789f10 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sigurn/crc8 v0.0.0-20160107002456-e55481d6f45c // indirect
 	github.com/sigurn/utils v0.0.0-20190728110027-e1fefb11a144 // indirect

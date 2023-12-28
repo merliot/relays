@@ -11,9 +11,9 @@ COPY . ./
 
 ARG SCHEME=wss
 
-#RUN go work init
 RUN go work use .
 RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
+RUN tinygo build -target nano-rp2040 -o nano-rp2040.uf2 -size short -stack-size 8kb ./run/
 
 EXPOSE 8000
 
