@@ -12,7 +12,8 @@ COPY . ./
 ARG SCHEME=wss
 
 RUN go work use .
-RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
+#RUN CGO_ENABLED=0 GOOS=linux go build -tags $SCHEME,prime -o /relays ./cmd/
+RUN go build -tags $SCHEME,prime -o /relays ./cmd/
 RUN go run ./tools/uf2-builder -target nano-rp2040 -model relays
 
 EXPOSE 8000
