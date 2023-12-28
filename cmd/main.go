@@ -1,4 +1,4 @@
-// go run ./cmd/
+// go run ./cmd
 // go run -tags prime ./cmd
 // tinygo flash -target xxx ./cmd
 
