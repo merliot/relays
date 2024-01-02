@@ -18,7 +18,7 @@ var (
 	portPrime    = dean.GetEnv("PORT_PRIME", "8001")
 	user         = dean.GetEnv("USER", "")
 	passwd       = dean.GetEnv("PASSWD", "")
-	dialURLs     = dean.GetEnv("DIAL_URLS", "ws://127.0.0.1:8001/ws/?ping-period=4")
+	dialURLs     = dean.GetEnv("DIAL_URLS", "")
 	ssids        = dean.GetEnv("WIFI_SSIDS", "")
 	passphrases  = dean.GetEnv("WIFI_PASSPHRASES", "")
 )
