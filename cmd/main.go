@@ -27,5 +27,6 @@ func main() {
 	relays := relays.New(id, "relays", name).(*relays.Relays)
 	relays.SetDeployParams(deployParams)
 	relays.SetWifiAuth(ssids, passphrases)
+	relays.SetDialURLs(dialURLs)
 	runner.Run(relays, port, portPrime, user, passwd, dialURLs)
 }
