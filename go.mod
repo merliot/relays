@@ -6,8 +6,8 @@ replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3f
 
 require (
 	github.com/merliot/dean v0.0.0-20240103014614-b21c48bb120e
-	github.com/merliot/device v0.0.0-20240103015648-efc16bce3b15
-	github.com/merliot/target v0.0.0-20231208003459-02cacc0ea0c0
+	github.com/merliot/device v0.0.0-20240113233425-1485a6bbb68b
+	github.com/merliot/target v0.0.0-20240113233253-7bc2b49a202d
 	gobot.io/x/gobot v1.16.0
 )
 
