@@ -18,6 +18,7 @@ ARG SCHEME=wss
 RUN go work use .
 RUN go build -tags $SCHEME,prime -o /relays ./cmd/
 RUN go run ../device/cmd/uf2-builder -target nano-rp2040 -model relays
+RUN go run ../device/cmd/uf2-builder -target wioterminal -model relays
 
 EXPOSE 8000
 
