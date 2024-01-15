@@ -1,14 +1,13 @@
 import { WebSocketController } from './common.js'
 
-export function run(prefix, ws) {
-	const relays = new Relays()
-	relays.run(prefix, ws)
+export function run(prefix, url) {
+	const relays = new Relays(prefix, url)
 }
 
 class Relays extends WebSocketController {
 
-	constructor() {
-		super()
+	constructor(prefix, url) {
+		super(prefix, url)
 	}
 
 	open() {
@@ -72,6 +71,6 @@ class Relays extends WebSocketController {
 		var relay = this.state.Relays[index]
 		relay.State = !relay.State
 		this.setRelayImg(relay, image)
-		this.conn.send(JSON.stringify({Path: "click", Relay: index, State: relay.State}))
+		this.webSocket.send(JSON.stringify({Path: "click", Relay: index, State: relay.State}))
 	}
 }
