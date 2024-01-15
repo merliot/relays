@@ -16,7 +16,7 @@ require (
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.0.0 // indirect
-	github.com/merliot/prime v0.0.0-20231207215615-e07856129c62 // indirect
+	github.com/merliot/prime v0.0.0-20240115201907-80e31bed9365 // indirect
 	github.com/merliot/uf2 v0.0.0-20231228035705-76e82a789f10 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sigurn/crc8 v0.0.0-20160107002456-e55481d6f45c // indirect
