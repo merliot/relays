@@ -6,10 +6,6 @@ export function run(prefix, url) {
 
 class Relays extends WebSocketController {
 
-	constructor(prefix, url) {
-		super(prefix, url)
-	}
-
 	open() {
 		super.open()
 		this.showRelays()
