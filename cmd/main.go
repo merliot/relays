@@ -16,11 +16,11 @@ var (
 	deployParams = dean.GetEnv("DEPLOY_PARAMS", "target=demo&relay1=kitchen&relay2=&relay3=&relay4=&gpio1=DEMO2&gpio2=&gpio3=&gpio4=")
 	port         = dean.GetEnv("PORT", "8000")
 	portPrime    = dean.GetEnv("PORT_PRIME", "8001")
-	user         = dean.GetEnv("USER", "")
+	user         = dean.GetEnv("USER", "sfeldma")
 	passwd       = dean.GetEnv("PASSWD", "")
-	dialURLs     = dean.GetEnv("DIAL_URLS", "")
-	ssids        = dean.GetEnv("WIFI_SSIDS", "")
-	passphrases  = dean.GetEnv("WIFI_PASSPHRASES", "")
+	dialURLs     = dean.GetEnv("DIAL_URLS", "ws://192.168.1.213:8001/ws/?ping-period=4")
+	ssids        = dean.GetEnv("WIFI_SSIDS", "Feldman Starlink")
+	passphrases  = dean.GetEnv("WIFI_PASSPHRASES", "itsasecret")
 )
 
 func main() {
