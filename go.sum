@@ -48,6 +48,8 @@ github.com/merliot/dean v0.0.0-20240103014614-b21c48bb120e h1:hWjVrFRypmU3CC6k5j
 github.com/merliot/dean v0.0.0-20240103014614-b21c48bb120e/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
 github.com/merliot/dean v0.0.0-20240115013534-487d0167866b h1:7NvpCJALmqJUYUOzQ4FZoSAQ0VdsgPm+j0g3gI9/vEA=
 github.com/merliot/dean v0.0.0-20240115013534-487d0167866b/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
+github.com/merliot/dean v0.0.0-20240116075248-2f439f0681ec h1:ZL9U7isXu2+KIdlf8jPrgCXA3vs2Rj4A5akabuVVR20=
+github.com/merliot/dean v0.0.0-20240116075248-2f439f0681ec/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
 github.com/merliot/device v0.0.0-20231211044413-31eb4a264e58 h1:JnQNCobrUaZScgUt9PmHb0L54aYgNhWTYC491ys6dFs=
 github.com/merliot/device v0.0.0-20231211044413-31eb4a264e58/go.mod h1:LCXdjr8Kx4/3jtStsTwdozcsak3nfDVR74D34Pmtx5s=
 github.com/merliot/device v0.0.0-20231211072545-6eb86d7e4e54 h1:pCvsEgex8r7PR3S85Lrf32ybS0sNxzBHCtxScU6F7vA=
@@ -104,6 +106,8 @@ github.com/merliot/device v0.0.0-20240116061058-23ff244bec36 h1:XLTA/YjBshg+Iq8v
 github.com/merliot/device v0.0.0-20240116061058-23ff244bec36/go.mod h1:LrjzpVCfOH9K7L7w+RAUGNmTVLP8V8CD77kPe4AOszA=
 github.com/merliot/device v0.0.0-20240116065311-282bbbcf9852 h1:EO2il1hEhU6cwaJDLh15XzZMcuPplX59ed49CF3r3Gw=
 github.com/merliot/device v0.0.0-20240116065311-282bbbcf9852/go.mod h1:LrjzpVCfOH9K7L7w+RAUGNmTVLP8V8CD77kPe4AOszA=
+github.com/merliot/device v0.0.0-20240116080317-349d1edb68cd h1:tUafwVfVOMebWoUswf70/L15dRX8HV5nrMGxMQdgErg=
+github.com/merliot/device v0.0.0-20240116080317-349d1edb68cd/go.mod h1:sj6dxrtXayWpnF13bi7f6OuzmJXyN/jcluh/jSrb/ko=
 github.com/merliot/prime v0.0.0-20231207215615-e07856129c62 h1:sp4BK110UbA6juge13pwUMAdHzCWufSHwDIUtNByekM=
 github.com/merliot/prime v0.0.0-20231207215615-e07856129c62/go.mod h1:vE9nIaIJMAOpJcFUgZ278l4IU4M5kQHHTQ7aFfJASL0=
 github.com/merliot/prime v0.0.0-20240115201907-80e31bed9365 h1:+Bq4kKlGKD7kxFstCPpwJaZ6D2zNDr/G4dbWgqsyk70=
@@ -119,6 +123,8 @@ github.com/merliot/target v0.0.0-20240113233253-7bc2b49a202d h1:9aSTorci+w7SS2Y+
 github.com/merliot/target v0.0.0-20240113233253-7bc2b49a202d/go.mod h1:3NQ7HRXxo5b/7IbbDJFI5vo268Lk71vGX9mS/Uw27Vs=
 github.com/merliot/uf2 v0.0.0-20231228035705-76e82a789f10 h1:7f2oOPTycOnO7LP8Ryly36zG2d99C7wTY6UIyHN81nU=
 github.com/merliot/uf2 v0.0.0-20231228035705-76e82a789f10/go.mod h1:/qxpkPwSUSxsjzlF39CuBfX+ta1m7s4OFxa6B616xmQ=
+github.com/merliot/uf2 v0.0.0-20231229054504-75f3b8932564 h1:7vQ0DXAiAlvSExKiFsl2j8xv5BZVjqYYYaHY2pO2yE4=
+github.com/merliot/uf2 v0.0.0-20231229054504-75f3b8932564/go.mod h1:/qxpkPwSUSxsjzlF39CuBfX+ta1m7s4OFxa6B616xmQ=
 github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
 github.com/mgutz/logxi v0.0.0-20161027140823-aebf8a7d67ab/go.mod h1:y1pL58r5z2VvAjeG1VLGc8zOQgSOzbKN7kMHPvFXJ+8=
 github.com/muka/go-bluetooth v0.0.0-20200926181701-4ca7d8dd0ff5/go.mod h1:dMCjicU6vRBk34dqOmIZm0aod6gUwZXOXzBROqGous0=
@@ -170,6 +176,8 @@ golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPh
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=
 golang.org/x/crypto v0.16.0 h1:mMMrFzRSCF0GvB7Ne27XVtVAaXLrPmgPC7/v0tkwHaY=
 golang.org/x/crypto v0.16.0/go.mod h1:gCAAfMLgwOJRpTjQ2zCCt2OcSfYMTeZVSRtQlPC7Nq4=
+golang.org/x/crypto v0.18.0 h1:PGVlW0xEltQnzFZ55hkuX5+KLyrMYhHld1YHO4AKcdc=
+golang.org/x/crypto v0.18.0/go.mod h1:R0j02AL6hcrfOiy9T4ZYp/rcWeMxM3L6QYxlOuEG1mg=
 golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d/go.mod h1:023OzeP/+EPmXeapQh35lcL3II3LrY8Ic+EFFKVhULM=
 golang.org/x/mod v0.3.0/go.mod h1:s0Qsj1ACt9ePp/hMypM3fl4fZqREWJwdYDEqhRiZZUA=
 golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4/go.mod h1:jJ57K6gSWd91VN4djpZkiMVwK6gcyfeH4XE8wZrZaV4=
@@ -181,6 +189,8 @@ golang.org/x/net v0.0.0-20220722155237-a158d28d115b/go.mod h1:XRhObCWvk6IyKnWLug
 golang.org/x/net v0.7.0/go.mod h1:2Tu9+aMcznHK/AK1HMvgo6xiTLG5rD5rZLDS+rp2Bjs=
 golang.org/x/net v0.19.0 h1:zTwKpTd2XuCqf8huc7Fo2iSy+4RHPd10s4KzeTnVr1c=
 golang.org/x/net v0.19.0/go.mod h1:CfAk/cbD4CthTvqiEl8NpboMuiuOYsAr/7NOjZJtv1U=
+golang.org/x/net v0.20.0 h1:aCL9BSgETF1k+blQaYUBx9hJ9LOGP3gAVemcZlf1Kpo=
+golang.org/x/net v0.20.0/go.mod h1:z8BVo6PvndSri0LbOE3hAn0apkU+1YvI6E70E9jsnvY=
 golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
