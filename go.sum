@@ -52,6 +52,8 @@ github.com/merliot/dean v0.0.0-20240116075248-2f439f0681ec h1:ZL9U7isXu2+KIdlf8j
 github.com/merliot/dean v0.0.0-20240116075248-2f439f0681ec/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
 github.com/merliot/dean v0.0.0-20240117031211-00e7b8b01bfd h1:UBy/BurIp6CQ3ymlksTqqYwhwuTCkCDSumhcTQaPPzE=
 github.com/merliot/dean v0.0.0-20240117031211-00e7b8b01bfd/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
+github.com/merliot/dean v0.0.0-20240117194605-79a37431f285 h1:r0nf5/aym09QK+uU6YqFoVmtX6amEjqm6Q7PCa9Yw6I=
+github.com/merliot/dean v0.0.0-20240117194605-79a37431f285/go.mod h1:uoIGfhAx8rt/TB3mDZcZWvO/+ajvNitFYYHSHBqqBrE=
 github.com/merliot/device v0.0.0-20231211044413-31eb4a264e58 h1:JnQNCobrUaZScgUt9PmHb0L54aYgNhWTYC491ys6dFs=
 github.com/merliot/device v0.0.0-20231211044413-31eb4a264e58/go.mod h1:LCXdjr8Kx4/3jtStsTwdozcsak3nfDVR74D34Pmtx5s=
 github.com/merliot/device v0.0.0-20231211072545-6eb86d7e4e54 h1:pCvsEgex8r7PR3S85Lrf32ybS0sNxzBHCtxScU6F7vA=
@@ -122,6 +124,8 @@ github.com/merliot/device v0.0.0-20240117074231-3b48830090d1 h1:k1Wrw/0xNNZRuNHR
 github.com/merliot/device v0.0.0-20240117074231-3b48830090d1/go.mod h1:Y2rr/ke0ZujqmoFzY3lFJZlWt9Z7kSgnISQKFr8YQyw=
 github.com/merliot/device v0.0.0-20240117081815-1296dffd6c74 h1:FpmKaFoovlcWvEHfRUKwfxIl/snXyNqjjuM6Denswow=
 github.com/merliot/device v0.0.0-20240117081815-1296dffd6c74/go.mod h1:Y2rr/ke0ZujqmoFzY3lFJZlWt9Z7kSgnISQKFr8YQyw=
+github.com/merliot/device v0.0.0-20240117200548-5bad54465e52 h1:miyEZ9izc1/mQJBeJFVu/1jT6MtFX+lJzVwxCkhWX9c=
+github.com/merliot/device v0.0.0-20240117200548-5bad54465e52/go.mod h1:aYgqB/jh3ZqsOZfWm4xLHPv89fYS5qU4em12uK+MSmo=
 github.com/merliot/prime v0.0.0-20231207215615-e07856129c62 h1:sp4BK110UbA6juge13pwUMAdHzCWufSHwDIUtNByekM=
 github.com/merliot/prime v0.0.0-20231207215615-e07856129c62/go.mod h1:vE9nIaIJMAOpJcFUgZ278l4IU4M5kQHHTQ7aFfJASL0=
 github.com/merliot/prime v0.0.0-20240115201907-80e31bed9365 h1:+Bq4kKlGKD7kxFstCPpwJaZ6D2zNDr/G4dbWgqsyk70=
