@@ -9,7 +9,7 @@ import (
 	"syscall"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/target"
+	"github.com/merliot/device/target"
 	"gobot.io/x/gobot/drivers/gpio"
 	"gobot.io/x/gobot/platforms/raspi"
 )

@@ -6,8 +6,7 @@ replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3f
 
 require (
 	github.com/merliot/dean v0.0.0-20240117194605-79a37431f285
-	github.com/merliot/device v0.0.0-20240117212949-fdfe22427120
-	github.com/merliot/target v0.0.0-20240113233253-7bc2b49a202d
+	github.com/merliot/device v0.0.0-20240117232901-ac2b0a3571af
 	gobot.io/x/gobot v1.16.0
 )
 
@@ -16,8 +15,6 @@ require (
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/hashicorp/errwrap v1.0.0 // indirect
 	github.com/hashicorp/go-multierror v1.0.0 // indirect
-	github.com/merliot/prime v0.0.0-20240116062652-0f699a59a12e // indirect
-	github.com/merliot/uf2 v0.0.0-20231229054504-75f3b8932564 // indirect
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sigurn/crc8 v0.0.0-20160107002456-e55481d6f45c // indirect
 	github.com/sigurn/utils v0.0.0-20190728110027-e1fefb11a144 // indirect
