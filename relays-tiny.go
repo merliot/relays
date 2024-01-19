@@ -8,17 +8,14 @@ import (
 	"github.com/merliot/dean"
 )
 
+type targetRelayStruct struct {
+	pin machine.Pin
+}
+
 type targetStruct struct {
 }
 
 func (r *Relays) targetNew() {
-}
-
-type Relay struct {
-	Name  string
-	Gpio  string
-	State bool
-	pin   machine.Pin
 }
 
 func (r *Relay) on() {

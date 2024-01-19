@@ -6,18 +6,15 @@ import (
 	"github.com/merliot/dean"
 )
 
+type targetRelayStruct struct {
+}
+
 type targetStruct struct {
 	osStruct
 }
 
 func (r *Relays) targetNew() {
 	r.osNew()
-}
-
-type Relay struct {
-	Name   string
-	Gpio   string
-	State  bool
 }
 
 func (r *Relay) on() {

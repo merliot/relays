@@ -14,6 +14,10 @@ import (
 	"gobot.io/x/gobot/platforms/raspi"
 )
 
+type targetRelayStruct struct {
+	driver *gpio.RelayDriver
+}
+
 type targetStruct struct {
 	osStruct
 	adaptor *raspi.Adaptor
@@ -22,13 +26,6 @@ type targetStruct struct {
 func (r *Relays) targetNew() {
 	r.osNew()
 	r.adaptor = raspi.NewAdaptor()
-}
-
-type Relay struct {
-	Name   string
-	Gpio   string
-	State  bool
-	driver *gpio.RelayDriver
 }
 
 func (r *Relay) start() {

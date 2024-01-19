@@ -9,6 +9,13 @@ import (
 	"github.com/merliot/device"
 )
 
+type Relay struct {
+	Name  string
+	Gpio  string
+	State bool
+	targetRelayStruct
+}
+
 type Relays struct {
 	*device.Device
 	Relays [4]Relay
