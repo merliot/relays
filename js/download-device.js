@@ -1,4 +1,4 @@
-let target = document.getElementById('deploy-target')
+let target = document.getElementById('download-target')
 let gpios = deployTargetGpios[target.value];
 
 // Function to refresh all select options based on current selections
@@ -38,7 +38,7 @@ function clearGpioOptions() {
     });
 }
 
-// Attach an event listener to the deploy-target dropdown to adjust available GPIOs
+// Attach an event listener to the download-target dropdown to adjust available GPIOs
 target.addEventListener('change', function() {
     const selectedTarget = this.value;
     if (deployTargetGpios[selectedTarget]) {
