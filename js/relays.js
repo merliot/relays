@@ -20,6 +20,11 @@ class Relays extends WebSocketController {
 	}
 
 	showRelays() {
+
+		let nodef = document.getElementById("nodef")
+		nodef.classList.replace("visible", "hidden")
+
+		var undef = true
 		for (let i = 0; i < 4; i++) {
 			let div = document.getElementById("relay" + i)
 			let label = document.getElementById("relay" + i + "-name")
@@ -27,23 +32,21 @@ class Relays extends WebSocketController {
 			let gpio = document.getElementById("gpio" + i)
 			var relay = this.state.Relays[i]
 			if (relay.Gpio === "") {
-				div.classList.replace("relay", "relay-unused")
-				gpio.classList.replace("gpio", "gpio-unused")
-				label.classList.replace("relay-name", "relay-name-unused")
-				gpio.textContent = ""
-				label.textContent = "unasigned"
-				image.src = "images/relay-unused.png"
+				div.classList.replace("visibleFlex", "hidden")
 			} else {
-				div.classList.replace("relay-unused", "relay")
-				gpio.classList.replace("gpio-unused", "gpio")
-				label.classList.replace("relay-name-unused", "relay-name")
+				undef = false
 				gpio.textContent = relay.Gpio
 				label.textContent = relay.Name
-				this.setRelayImg(relay, image)
+				div.classList.replace("hidden", "visibleFlex")
 				div.onclick = () => {
 					this.relayClick(image, i)
 				}
+				this.setRelayImg(relay, image)
 			}
+		}
+
+		if (undef) {
+			nodef.classList.replace("hidden", "visible")
 		}
 	}
 

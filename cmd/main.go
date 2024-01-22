@@ -13,7 +13,7 @@ import (
 var (
 	id           = dean.GetEnv("ID", "relay01")
 	name         = dean.GetEnv("NAME", "Relays")
-	deployParams = dean.GetEnv("DEPLOY_PARAMS", "target=demo&relay1=kitchen&relay2=&relay3=&relay4=&gpio1=DEMO2&gpio2=&gpio3=&gpio4=")
+	deployParams = dean.GetEnv("DEPLOY_PARAMS", "target=demo&relay1=kitchen&relay2=bar&relay3=&relay4=foo&gpio1=DEMO2&gpio2=DEMO0&gpio3=&gpio4=DEMO1")
 	port         = dean.GetEnv("PORT", "8000")
 	portPrime    = dean.GetEnv("PORT_PRIME", "8001")
 	user         = dean.GetEnv("USER", "")
