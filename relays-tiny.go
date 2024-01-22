@@ -35,7 +35,7 @@ func (r *Relays) run(i *dean.Injector) {
 	for i := range r.Relays {
 		relay := &r.Relays[i]
 		relay.pin = machine.NoPin
-		if pin, ok := r.pins()[relay.Gpio]; ok {
+		if pin, ok := r.Pins()[relay.Gpio]; ok {
 			relay.pin = machine.Pin(pin)
 			relay.pin.Configure(machine.PinConfig{Mode: machine.PinOutput})
 		}

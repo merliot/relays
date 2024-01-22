@@ -9,7 +9,6 @@ import (
 	"syscall"
 
 	"github.com/merliot/dean"
-	"github.com/merliot/device/target"
 	"gobot.io/x/gobot/drivers/gpio"
 	"gobot.io/x/gobot/platforms/raspi"
 )
@@ -46,13 +45,9 @@ func (r *Relay) off() {
 	}
 }
 
-func (r *Relays) pins() target.GpioPins {
-	return r.Targets["rpi"].GpioPins
-}
-
 // FailSafe by turning off all gpios
 func (r *Relays) failSafe() {
-	for _, pin := range r.pins() {
+	for _, pin := range r.Pins() {
 		rpin := strconv.Itoa(pin)
 		driver := gpio.NewRelayDriver(r.adaptor, rpin)
 		driver.Start()
@@ -75,7 +70,7 @@ func (r *Relays) run(i *dean.Injector) {
 		if relay.Gpio == "" {
 			continue
 		}
-		if pin, ok := r.pins()[relay.Gpio]; ok {
+		if pin, ok := r.Pins()[relay.Gpio]; ok {
 			rpin := strconv.Itoa(pin)
 			relay.driver = gpio.NewRelayDriver(r.adaptor, rpin)
 			relay.start()
