@@ -1,15 +1,16 @@
 .relays {
 	justify-content: space-evenly;
+	align-items: center;
+	min-height: 200px;
 }
 
 .relay {
 	align-items: center;
 	cursor: pointer;
-	width: 64px;
 }
 
 .relay-img {
-	width: 64px;
+	height: 100px;
 }
 
 .gpio {
