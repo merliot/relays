@@ -37,11 +37,11 @@ class Relays extends WebSocketController {
 				undef = false
 				gpio.textContent = relay.Gpio
 				label.textContent = relay.Name
-				div.classList.replace("hidden", "visibleFlex")
 				div.onclick = () => {
 					this.relayClick(image, i)
 				}
 				this.setRelayImg(relay, image)
+				div.classList.replace("hidden", "visibleFlex")
 			}
 		}
 
