@@ -4,13 +4,24 @@
 	min-height: 200px;
 }
 
+.tile .relays {
+	min-height: 120px;
+}
+
 .relay {
 	align-items: center;
-	cursor: pointer;
 }
 
 .relay-img {
 	height: 100px;
+}
+
+.tile .relay-img {
+	height: 60px;
+}
+
+.tile .relay-name {
+	font-size: x-small;
 }
 
 .gpio {

@@ -1,7 +1,7 @@
-import { WebSocketController } from './common.js'
+import { WebSocketController, ViewMode } from './common.js'
 
-export function run(prefix, url) {
-	const relays = new Relays(prefix, url)
+export function run(prefix, url, viewMode) {
+	const relays = new Relays(prefix, url, viewMode)
 }
 
 class Relays extends WebSocketController {
@@ -27,20 +27,15 @@ class Relays extends WebSocketController {
 		var undef = true
 		for (let i = 0; i < 4; i++) {
 			let div = document.getElementById("relay" + i)
-			let label = document.getElementById("relay" + i + "-name")
-			let image = document.getElementById("relay" + i + "-img")
-			let gpio = document.getElementById("gpio" + i)
 			var relay = this.state.Relays[i]
 			if (relay.Gpio === "") {
 				div.classList.replace("visibleFlex", "hidden")
 			} else {
 				undef = false
-				gpio.textContent = relay.Gpio
-				label.textContent = relay.Name
-				div.onclick = () => {
-					this.relayClick(image, i)
-				}
-				this.setRelayImg(relay, image)
+				this.setMouse(i)
+				this.setRelayImg(relay, i)
+				this.setGpio(relay, i)
+				this.setRelayName(relay, i)
 				div.classList.replace("hidden", "visibleFlex")
 			}
 		}
@@ -50,8 +45,17 @@ class Relays extends WebSocketController {
 		}
 	}
 
-	setRelayImg(relay, image) {
-		image.disabled = false
+	setMouse(i) {
+		if (this.viewMode === ViewMode.ViewFull) {
+			let div = document.getElementById("relay" + i)
+			div.onclick = () => {
+				this.relayClick(i)
+			}
+		}
+	}
+
+	setRelayImg(relay, i) {
+		let image = document.getElementById("relay" + i + "-img")
 		if (relay.State) {
 			image.src = "images/relay-on.png"
 		} else {
@@ -59,17 +63,28 @@ class Relays extends WebSocketController {
 		}
 	}
 
-	saveClick(msg) {
-		var image = document.getElementById("relay" + msg.Relay + "-img")
-		var relay = this.state.Relays[msg.Relay]
-		relay.State = msg.State
-		this.setRelayImg(relay, image)
+	setGpio(relay, i) {
+		if (this.viewMode === ViewMode.ViewFull) {
+			let gpio = document.getElementById("gpio" + i)
+			gpio.textContent = relay.Gpio
+		}
 	}
 
-	relayClick(image, index) {
+	setRelayName(relay, i) {
+		let label = document.getElementById("relay" + i + "-name")
+		label.textContent = relay.Name
+	}
+
+	saveClick(msg) {
+		var relay = this.state.Relays[msg.Relay]
+		relay.State = msg.State
+		this.setRelayImg(relay, msg.Relay)
+	}
+
+	relayClick(index) {
 		var relay = this.state.Relays[index]
 		relay.State = !relay.State
-		this.setRelayImg(relay, image)
+		this.setRelayImg(relay, index)
 		this.webSocket.send(JSON.stringify({Path: "click", Relay: index, State: relay.State}))
 	}
 }
