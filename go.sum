@@ -56,6 +56,8 @@ github.com/merliot/device v0.0.0-20240129220450-7f9682db6151 h1:5n4l5T4iFVre8HQ7
 github.com/merliot/device v0.0.0-20240129220450-7f9682db6151/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
 github.com/merliot/device v0.0.0-20240130065323-78bf534ff195 h1:dyDBXwzgKCH/6I9KUj1jaQTuDkprSiUQv6qMdjj4kyk=
 github.com/merliot/device v0.0.0-20240130065323-78bf534ff195/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
+github.com/merliot/device v0.0.0-20240201033916-6605a4c91299 h1:qkO1E/EtlY3jdHu3iX7D01Asavg1VsOhrVvi/Bktj70=
+github.com/merliot/device v0.0.0-20240201033916-6605a4c91299/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
 github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
 github.com/mgutz/logxi v0.0.0-20161027140823-aebf8a7d67ab/go.mod h1:y1pL58r5z2VvAjeG1VLGc8zOQgSOzbKN7kMHPvFXJ+8=
 github.com/muka/go-bluetooth v0.0.0-20200926181701-4ca7d8dd0ff5/go.mod h1:dMCjicU6vRBk34dqOmIZm0aod6gUwZXOXzBROqGous0=
