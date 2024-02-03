@@ -31,3 +31,12 @@ func (r *Relays) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 		r.API(r.templates, w, req)
 	}
 }
+
+func (r *Relays) Icon() []byte {
+	icon, _ := fs.ReadFile("images/icon.png")
+	return icon
+}
+
+func (r *Relays) DescHtml() []byte {
+	return nil
+}
