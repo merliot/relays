@@ -11,7 +11,7 @@ import (
 	"github.com/merliot/device"
 )
 
-//go:embed css images js template
+//go:embed css html images js template
 var fs embed.FS
 
 type osStruct struct {
@@ -38,5 +38,10 @@ func (r *Relays) Icon() []byte {
 }
 
 func (r *Relays) DescHtml() []byte {
-	return nil
+	desc, _ := fs.ReadFile("html/desc.html")
+	return desc
+}
+
+func (r *Relays) SupportedTargets() string {
+	return r.Targets.FullNames()
 }
