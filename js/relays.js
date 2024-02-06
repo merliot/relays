@@ -8,7 +8,9 @@ class Relays extends WebSocketController {
 
 	open() {
 		super.open()
-		this.showRelays()
+		if (this.state.DeployParams !== "") {
+			this.showRelays()
+		}
 	}
 
 	handle(msg) {
@@ -20,28 +22,18 @@ class Relays extends WebSocketController {
 	}
 
 	showRelays() {
-
-		let nodef = document.getElementById("nodef")
-		nodef.classList.replace("visible", "hidden")
-
-		var undef = true
 		for (let i = 0; i < 4; i++) {
 			let div = document.getElementById("relay" + i)
 			var relay = this.state.Relays[i]
 			if (relay.Gpio === "") {
 				div.classList.replace("visibleFlex", "hidden")
 			} else {
-				undef = false
 				this.setMouse(i)
 				this.setRelayImg(relay, i)
 				this.setGpio(relay, i)
 				this.setRelayName(relay, i)
 				div.classList.replace("hidden", "visibleFlex")
 			}
-		}
-
-		if (undef) {
-			nodef.classList.replace("hidden", "visible")
 		}
 	}
 
