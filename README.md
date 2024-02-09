@@ -1,6 +1,6 @@
 ## Relays Device
 
-Relays let's you control up to 4 GPIO-connected relays.
+Relays device controls 1-4 relays using a microcontroller or Rapsberry Pi.
 
 ![](images/relay-view.webp)
 
