@@ -3,6 +3,7 @@ package relays
 import (
 	"embed"
 	"fmt"
+	"net/http"
 	"net/url"
 	"strconv"
 
@@ -72,6 +73,10 @@ func (r *Relays) Subscribers() dean.Subscribers {
 		"get/state": r.getState,
 		"click":     r.click,
 	}
+}
+
+func (r *Relays) ServeHTTP(w http.ResponseWriter, req *http.Request) {
+	r.API(w, req, r)
 }
 
 func (r *Relays) setRelay(num int, name, gpio string) {
