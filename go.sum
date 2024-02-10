@@ -78,6 +78,10 @@ github.com/merliot/device v0.0.0-20240206192909-bd95e0e1c2e3 h1:MF4dGNxYVgOebnyI
 github.com/merliot/device v0.0.0-20240206192909-bd95e0e1c2e3/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
 github.com/merliot/device v0.0.0-20240210074043-1e50b061e357 h1:afkfTCeKXSWQrGXoWXa/d/bg2Bkqx4dLj2xt+iJQnLs=
 github.com/merliot/device v0.0.0-20240210074043-1e50b061e357/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
+github.com/merliot/device v0.0.0-20240210080827-a859f10dacab h1:8Vg0sX+UQOyMxYvI84A3eT0GkEe3U0Hsw32GVekadEo=
+github.com/merliot/device v0.0.0-20240210080827-a859f10dacab/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
+github.com/merliot/device v0.0.0-20240210081622-098eae609043 h1:Rhz2ym7uogeSSLkMIU4/8bbSmtlgENxqEInncBAvInM=
+github.com/merliot/device v0.0.0-20240210081622-098eae609043/go.mod h1:vPrEcw70HyTYj3yM5uzl4ZNDVoPpyIRdl6xM9kpChn0=
 github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b/go.mod h1:01TrycV0kFyexm33Z7vhZRXopbI8J3TDReVlkTgMUxE=
 github.com/mgutz/logxi v0.0.0-20161027140823-aebf8a7d67ab/go.mod h1:y1pL58r5z2VvAjeG1VLGc8zOQgSOzbKN7kMHPvFXJ+8=
 github.com/muka/go-bluetooth v0.0.0-20200926181701-4ca7d8dd0ff5/go.mod h1:dMCjicU6vRBk34dqOmIZm0aod6gUwZXOXzBROqGous0=
@@ -129,6 +133,8 @@ golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9/go.mod h1:LzIPMQfyMNhhGPh
 golang.org/x/crypto v0.0.0-20210921155107-089bfa567519/go.mod h1:GvvjBRRGRdwPK5ydBHafDWAxML/pGHZbMvKqRZ5+Abc=
 golang.org/x/crypto v0.18.0 h1:PGVlW0xEltQnzFZ55hkuX5+KLyrMYhHld1YHO4AKcdc=
 golang.org/x/crypto v0.18.0/go.mod h1:R0j02AL6hcrfOiy9T4ZYp/rcWeMxM3L6QYxlOuEG1mg=
+golang.org/x/crypto v0.19.0 h1:ENy+Az/9Y1vSrlrvBSyna3PITt4tiZLf7sgCjZBX7Wo=
+golang.org/x/crypto v0.19.0/go.mod h1:Iy9bg/ha4yyC70EfRS8jz+B6ybOBKMaSxLj6P6oBDfU=
 golang.org/x/image v0.0.0-20210628002857-a66eb6448b8d/go.mod h1:023OzeP/+EPmXeapQh35lcL3II3LrY8Ic+EFFKVhULM=
 golang.org/x/mod v0.3.0/go.mod h1:s0Qsj1ACt9ePp/hMypM3fl4fZqREWJwdYDEqhRiZZUA=
 golang.org/x/mod v0.6.0-dev.0.20220419223038-86c51ed26bb4/go.mod h1:jJ57K6gSWd91VN4djpZkiMVwK6gcyfeH4XE8wZrZaV4=
@@ -140,6 +146,8 @@ golang.org/x/net v0.0.0-20220722155237-a158d28d115b/go.mod h1:XRhObCWvk6IyKnWLug
 golang.org/x/net v0.7.0/go.mod h1:2Tu9+aMcznHK/AK1HMvgo6xiTLG5rD5rZLDS+rp2Bjs=
 golang.org/x/net v0.20.0 h1:aCL9BSgETF1k+blQaYUBx9hJ9LOGP3gAVemcZlf1Kpo=
 golang.org/x/net v0.20.0/go.mod h1:z8BVo6PvndSri0LbOE3hAn0apkU+1YvI6E70E9jsnvY=
+golang.org/x/net v0.21.0 h1:AQyQV4dYCvJ7vGmJyKki9+PBdyvhkSd8EIx/qb0AYv4=
+golang.org/x/net v0.21.0/go.mod h1:bIjVDfnllIU7BJ2DNgfnXvpSvtn8VRwhlsaeUTyUS44=
 golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
