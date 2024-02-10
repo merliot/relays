@@ -10,11 +10,9 @@ type targetRelayStruct struct {
 }
 
 type targetStruct struct {
-	osStruct
 }
 
 func (r *Relays) targetNew() {
-	r.osNew()
 }
 
 func (r *Relay) on() {

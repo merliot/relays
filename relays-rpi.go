@@ -18,12 +18,10 @@ type targetRelayStruct struct {
 }
 
 type targetStruct struct {
-	osStruct
 	adaptor *raspi.Adaptor
 }
 
 func (r *Relays) targetNew() {
-	r.osNew()
 	r.adaptor = raspi.NewAdaptor()
 }
 

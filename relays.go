@@ -1,6 +1,7 @@
 package relays
 
 import (
+	"embed"
 	"fmt"
 	"net/url"
 	"strconv"
@@ -8,6 +9,9 @@ import (
 	"github.com/merliot/dean"
 	"github.com/merliot/device"
 )
+
+//go:embed css html images js template
+var fs embed.FS
 
 type Relay struct {
 	Name  string
@@ -33,7 +37,7 @@ var targets = []string{"demo", "rpi", "nano-rp2040", "wioterminal"}
 func New(id, model, name string) dean.Thinger {
 	println("NEW RELAYS")
 	r := &Relays{}
-	r.Device = device.New(id, model, name, targets).(*device.Device)
+	r.Device = device.New(id, model, name, fs, targets).(*device.Device)
 	r.targetNew()
 	return r
 }
