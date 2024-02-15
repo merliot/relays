@@ -9,22 +9,17 @@ import (
 
 	"github.com/merliot/dean"
 	"github.com/merliot/device"
+	"github.com/merliot/device/relay"
 )
 
 //go:embed css html images js template
 var fs embed.FS
 
-type Relay struct {
-	Name  string
-	Gpio  string
-	State bool
-	targetRelayStruct
-}
+const maxRelays int = 4
 
 type Relays struct {
 	*device.Device
-	Relays [4]Relay
-	targetStruct
+	Relays []relay.Relay
 }
 
 type MsgClick struct {
@@ -37,10 +32,10 @@ var targets = []string{"demo", "rpi", "nano-rp2040", "wioterminal"}
 
 func New(id, model, name string) dean.Thinger {
 	println("NEW RELAYS")
-	r := &Relays{}
-	r.Device = device.New(id, model, name, fs, targets).(*device.Device)
-	r.targetNew()
-	return r
+	return &Relays{
+		Device: device.New(id, model, name, fs, targets).(*device.Device),
+		Relays: make([]relay.Relay, maxRelays),
+	}
 }
 
 func (r *Relays) save(msg *dean.Msg) {
@@ -59,9 +54,9 @@ func (r *Relays) click(msg *dean.Msg) {
 	relay.State = msgClick.State
 	if r.IsMetal() {
 		if msgClick.State {
-			relay.on()
+			relay.On()
 		} else {
-			relay.off()
+			relay.Off()
 		}
 	}
 	msg.Broadcast()
@@ -86,6 +81,7 @@ func (r *Relays) setRelay(num int, name, gpio string) {
 	}
 	relay.Name = name
 	relay.Gpio = gpio
+	relay.Configure()
 }
 
 func firstValue(values url.Values, key string) string {
@@ -101,11 +97,13 @@ func (r *Relays) parseParams() {
 		num := strconv.Itoa(i + 1)
 		name := firstValue(values, "relay"+num)
 		gpio := firstValue(values, "gpio"+num)
-		r.setRelay(i, name, gpio)
+		if gpio != "" {
+			r.setRelay(i, name, gpio)
+		}
 	}
 }
 
-func (r *Relays) Run(i *dean.Injector) {
+func (r *Relays) Setup() {
+	r.Device.Setup()
 	r.parseParams()
-	r.run(i)
 }
