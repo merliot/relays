@@ -31,5 +31,5 @@ func main() {
 	relays.SetWifiAuth(ssids, passphrases)
 	relays.SetDialURLs(dialURLs)
 	relays.SetWsScheme(wsScheme)
-	runner.Run(relays, port, portPrime, user, passwd, dialURLs)
+	runner.Run(relays, port, portPrime, user, passwd, dialURLs, wsScheme)
 }
