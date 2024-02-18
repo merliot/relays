@@ -4,9 +4,11 @@ Relays device controls 1-4 relays using a microcontroller or Rapsberry Pi.
 
 ### Running
 
-There are two ways to run a relays device: standalone or in a hub.  For standalone, a [Docker](https://www.docker.com/) container can run the device.  Or we can run the directly from source.
+There are two ways to run a relays device: standalone or in a hub.  For standalone, a [Docker](https://www.docker.com/) container can run the device.  Or we can run the device directly from source.
 
-#### Run on Docker
+See [Running on Hub]() for running the device on a hub.
+
+#### Run Standalone on Docker
 
 The easiest way to run a relays device is using a pre-built docker image:
 
