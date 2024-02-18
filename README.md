@@ -31,7 +31,7 @@ See full list of [environment](https://github.com/merliot/device/blob/main/docs/
 
 #### I don't have Docker
 
-If you don't have a host to run docker, try [Koyeb](koyeb.com) to cloud-host your relays container.  The first container is free (account required).  Click the deploy button to get started.
+If you don't have a host to run docker, try [Koyeb](https://koyeb.com) to cloud-host your relays container.  The first container is free (account required).  Click the deploy button to get started.
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=ghcr.io/merliot/relays:main&name=relays&instance_type=free&ports=8000;http;/&env[WS_SCHEME]=wss://)
 
