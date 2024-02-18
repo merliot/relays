@@ -25,4 +25,4 @@ docker run -e "WS_SCHEME=wss://" -p 8000:8000 ghcr.io/merliot/relays
 
 If you don't have a host to run docker, try [Koyeb](koyeb.com) to cloud-host your relays container.  The first container is free (account required).  Click the deploy button to get started.
 
-[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=ghcr.io/merliot/relays:main&name=relays&instance_type=free&ports=8080;http;/&env[WS_SCHEME]=wss://)
+[![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=ghcr.io/merliot/relays:main&name=relays&instance_type=free&ports=8000;http;/&env[WS_SCHEME]=wss://)
