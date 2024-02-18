@@ -19,7 +19,7 @@ docker run -p 8000:8000 ghcr.io/merliot/relays
 
 Now the device is now running in a docker container as a web server, listening on port :8000.  
 
-Browse to http://\<host\>:8000 to view and deploy the device.
+Browse to http://\<host\>:8000 to view and setup the device.
 
 If the docker host is using https://, pass in the environment variable WS_SCHEME=wss://.
 
