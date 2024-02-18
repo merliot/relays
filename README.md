@@ -2,7 +2,7 @@
 
 Relays device controls 1-4 relays using a microcontroller or Rapsberry Pi.
 
-#### Docker
+#### Run on Docker
 
 The easiest way to run a relays device is using a pre-built docker image:
 
