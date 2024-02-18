@@ -2,6 +2,10 @@
 
 Relays device controls 1-4 relays using a microcontroller or Rapsberry Pi.
 
+### Running
+
+There are two ways to run a relays device: standalone or in a hub.  For standalone, a [Docker](https://www.docker.com/) container can run the device.  Or we can run the directly from source.
+
 #### Run on Docker
 
 The easiest way to run a relays device is using a pre-built docker image:
@@ -29,7 +33,7 @@ If you don't have a host to run docker, try [Koyeb](koyeb.com) to cloud-host you
 
 [![Deploy to Koyeb](https://www.koyeb.com/static/images/deploy/button.svg)](https://app.koyeb.com/deploy?type=docker&image=ghcr.io/merliot/relays:main&name=relays&instance_type=free&ports=8000;http;/&env[WS_SCHEME]=wss://)
 
-Of course, any container hosting service will do.
+Of course, any container hosting service will do.  Just use the [Run on Docker](#run-on-docker) instructions above.
 
 #### I don't want to use Docker
 
