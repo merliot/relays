@@ -12,7 +12,7 @@ import (
 	"github.com/merliot/device/relay"
 )
 
-//go:embed css html images js template
+//go:embed css go.mod html images js template
 var fs embed.FS
 
 const maxRelays int = 4
