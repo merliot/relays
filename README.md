@@ -1,6 +1,6 @@
 ## Relays Device
 
-Relays device controls 1-4 relays using a microcontroller or Rapsberry Pi.
+Relays device controls 1-4 relays using a microcontroller or SBC, such as Rapsberry Pi.
 
 ### Running
 
