@@ -22,6 +22,7 @@ class Relays extends WebSocketController {
 	}
 
 	showRelays() {
+		var havesome = false
 		for (let i = 0; i < 4; i++) {
 			let div = document.getElementById("relay" + i)
 			var relay = this.state.Relays[i]
@@ -33,7 +34,11 @@ class Relays extends WebSocketController {
 				this.setGpio(relay, i)
 				this.setRelayName(relay, i)
 				div.classList.replace("hidden", "visibleFlex")
+				havesome = true
 			}
+		}
+		if (!havesome) {
+			document.getElementById("nodef").classList.replace("hidden", "visible")
 		}
 	}
 
