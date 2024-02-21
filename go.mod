@@ -5,8 +5,8 @@ go 1.21.5
 replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3fabdc5c9680
 
 require (
-	github.com/merliot/dean v0.0.0-20240214060428-ac508327f99c
-	github.com/merliot/device v0.0.0-20240221055352-97856a14dcfa
+	github.com/merliot/dean v0.0.0-20240221075053-323818dff3cb
+	github.com/merliot/device v0.0.0-20240221090220-66c454337fb7
 )
 
 require (
