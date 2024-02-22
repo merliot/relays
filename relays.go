@@ -4,7 +4,6 @@ import (
 	"embed"
 	"fmt"
 	"net/http"
-	"net/url"
 	"strconv"
 
 	"github.com/merliot/dean"
@@ -84,19 +83,12 @@ func (r *Relays) setRelay(num int, name, gpio string) {
 	relay.Configure()
 }
 
-func firstValue(values url.Values, key string) string {
-	if v, ok := values[key]; ok {
-		return v[0]
-	}
-	return ""
-}
-
 func (r *Relays) parseParams() {
 	values := r.ParseDeployParams()
 	for i := range r.Relays {
 		num := strconv.Itoa(i + 1)
-		name := firstValue(values, "relay"+num)
-		gpio := firstValue(values, "gpio"+num)
+		name := r.ParamFirstValue(values, "relay"+num)
+		gpio := r.ParamFirstValue(values, "gpio"+num)
 		if gpio != "" {
 			r.setRelay(i, name, gpio)
 		}
