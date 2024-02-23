@@ -84,11 +84,10 @@ func (r *Relays) setRelay(num int, name, gpio string) {
 }
 
 func (r *Relays) parseParams() {
-	values := r.ParseDeployParams()
 	for i := range r.Relays {
 		num := strconv.Itoa(i + 1)
-		name := r.ParamFirstValue(values, "relay"+num)
-		gpio := r.ParamFirstValue(values, "gpio"+num)
+		name := r.ParamFirstValue("relay" + num)
+		gpio := r.ParamFirstValue("gpio" + num)
 		if gpio != "" {
 			r.setRelay(i, name, gpio)
 		}
