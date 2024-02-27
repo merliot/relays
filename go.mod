@@ -5,8 +5,8 @@ go 1.21.5
 replace tinygo.org/x/drivers => tinygo.org/x/drivers v0.26.1-0.20231206190939-3fabdc5c9680
 
 require (
-	github.com/merliot/dean v0.0.0-20240225172934-0f89e115846c
-	github.com/merliot/device v0.0.0-20240225173130-219ff4513d3d
+	github.com/merliot/dean v0.0.0-20240227194445-fa196d6f3cbe
+	github.com/merliot/device v0.0.0-20240227194838-eba6e3dbdce8
 )
 
 require (
@@ -19,7 +19,7 @@ require (
 	github.com/sigurn/crc8 v0.0.0-20220107193325-2243fe600f9f // indirect
 	github.com/warthog618/gpiod v0.8.2 // indirect
 	gobot.io/x/gobot/v2 v2.3.0 // indirect
-	golang.org/x/crypto v0.19.0 // indirect
+	golang.org/x/crypto v0.20.0 // indirect
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect

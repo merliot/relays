@@ -9,10 +9,10 @@ github.com/hashicorp/errwrap v1.1.0 h1:OxrOeh75EUXMY8TBjag2fzXGZ40LB6IKw45YeGUDY
 github.com/hashicorp/errwrap v1.1.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
 github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+lD48awMYo=
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
-github.com/merliot/dean v0.0.0-20240225172934-0f89e115846c h1:q7WcXJ8Wkf5Ap4nSlOAp46i7+rDJf5khg9eagG6Juhc=
-github.com/merliot/dean v0.0.0-20240225172934-0f89e115846c/go.mod h1:YfI3sQq6W43w1sXOfSOLCGEYV9YwJ/hqkKd7MP+kOGo=
-github.com/merliot/device v0.0.0-20240225173130-219ff4513d3d h1:Zk7lrcgA6pj8stzT9JbJ2MClXvTjrdZOUVHlVd7XB2M=
-github.com/merliot/device v0.0.0-20240225173130-219ff4513d3d/go.mod h1:RqH+aL+ldBMVwCsXpSvBKc8uSrktEIGWFPmQs/yC2L4=
+github.com/merliot/dean v0.0.0-20240227194445-fa196d6f3cbe h1:45XdT0Al2PGlENtyaOVnplXcGJJbkZ0X28XBYaGaqZo=
+github.com/merliot/dean v0.0.0-20240227194445-fa196d6f3cbe/go.mod h1:YfI3sQq6W43w1sXOfSOLCGEYV9YwJ/hqkKd7MP+kOGo=
+github.com/merliot/device v0.0.0-20240227194838-eba6e3dbdce8 h1:Qao8pcSW4bNCv4Kl26jSEFrWtK+EuIZec4REU5T+fUs=
+github.com/merliot/device v0.0.0-20240227194838-eba6e3dbdce8/go.mod h1:PsBVZn6NQFkbHwfbEIVGx10zFA5/tHEQHifSr7/B1mo=
 github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5/go.mod h1:jvVRKCrJTQWu0XVbaOlby/2lO20uSCHEMzzplHXte1o=
 github.com/petermattis/goid v0.0.0-20231207134359-e60b3f734c67 h1:jik8PHtAIsPlCRJjJzl4udgEf7hawInF9texMeO2jrU=
 github.com/petermattis/goid v0.0.0-20231207134359-e60b3f734c67/go.mod h1:pxMtw7cyUw6B2bRH0ZBANSPg+AoSud1I1iyJHI69jH4=
@@ -32,8 +32,8 @@ github.com/warthog618/gpiod v0.8.2 h1:2HgQ9pNowPp7W77sXhX5ut5Tqq1WoS3t7bXYDxtYvx
 github.com/warthog618/gpiod v0.8.2/go.mod h1:O7BNpHjCn/4YS5yFVmoFZAlY1LuYuQ8vhPf0iy/qdi4=
 gobot.io/x/gobot/v2 v2.3.0 h1:A5uT4J54hS0CJ0qlcbOwBr6joEpQpkMSjdJavyAIGME=
 gobot.io/x/gobot/v2 v2.3.0/go.mod h1:Y2OP99XZwxvTaExiSf42NFQ4HfFeD9lhh+kHS6WGpPI=
-golang.org/x/crypto v0.19.0 h1:ENy+Az/9Y1vSrlrvBSyna3PITt4tiZLf7sgCjZBX7Wo=
-golang.org/x/crypto v0.19.0/go.mod h1:Iy9bg/ha4yyC70EfRS8jz+B6ybOBKMaSxLj6P6oBDfU=
+golang.org/x/crypto v0.20.0 h1:jmAMJJZXr5KiCw05dfYK9QnqaqKLYXijU23lsEdcQqg=
+golang.org/x/crypto v0.20.0/go.mod h1:Xwo95rrVNIoSMx9wa1JroENMToLWn3RNVrTBpLHgZPQ=
 golang.org/x/net v0.21.0 h1:AQyQV4dYCvJ7vGmJyKki9+PBdyvhkSd8EIx/qb0AYv4=
 golang.org/x/net v0.21.0/go.mod h1:bIjVDfnllIU7BJ2DNgfnXvpSvtn8VRwhlsaeUTyUS44=
 golang.org/x/sys v0.17.0 h1:25cE3gD+tdBA7lp7QfhuV+rJiE9YXTcS3VG1SqssI/Y=
