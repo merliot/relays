@@ -6,7 +6,7 @@ WORKDIR /app
 COPY . .
 
 RUN go build -tags prime -o /relays ./cmd
-RUN /relays -uf2
+RUN go run ./cmd/gen-uf2
 
 EXPOSE 8000
 
