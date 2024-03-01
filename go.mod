@@ -3,8 +3,8 @@ module github.com/merliot/relays
 go 1.21.5
 
 require (
-	github.com/merliot/dean v0.0.0-20240229090827-adf1d24af0a2
-	github.com/merliot/device v0.0.0-20240229093029-4dc2e1f41dea
+	github.com/merliot/dean v0.0.0-20240301075820-e91242dd8159
+	github.com/merliot/device v0.0.0-20240301182238-502d10bef914
 )
 
 require (
@@ -18,6 +18,7 @@ require (
 	github.com/warthog618/gpiod v0.8.2 // indirect
 	gobot.io/x/gobot/v2 v2.3.0 // indirect
 	golang.org/x/crypto v0.20.0 // indirect
+	golang.org/x/mod v0.15.0 // indirect
 	golang.org/x/net v0.21.0 // indirect
 	golang.org/x/sys v0.17.0 // indirect
 	golang.org/x/text v0.14.0 // indirect
