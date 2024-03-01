@@ -1,13 +1,12 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/merliot/device:main
+FROM merliot/device:main
 
 WORKDIR /app
 COPY . .
 
 RUN go generate ./...
 RUN go build -tags prime -o /relays ./cmd
-RUN go run ./cmd/gen-uf2
 
 EXPOSE 8000
 
