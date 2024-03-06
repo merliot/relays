@@ -11,8 +11,8 @@ github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+l
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
 github.com/merliot/dean v0.0.0-20240301075820-e91242dd8159 h1:X5BqvfUC0TIlavaaycp4ms8azKae1xA89tzWoaG4FrQ=
 github.com/merliot/dean v0.0.0-20240301075820-e91242dd8159/go.mod h1:YfI3sQq6W43w1sXOfSOLCGEYV9YwJ/hqkKd7MP+kOGo=
-github.com/merliot/device v0.0.0-20240306035708-957d67c4b28a h1:9w+v51VLAypHilkaB5/3INRfM3ICS8v8XPT7kho3uHo=
-github.com/merliot/device v0.0.0-20240306035708-957d67c4b28a/go.mod h1:HUjKfNLGIZdwOeQpCJmofJjtKEvOjktjgIRTUwQ9Jnc=
+github.com/merliot/device v0.0.0-20240306040259-f8186ea90301 h1:VdkQHaV0ThvNz5cYZFMA+55IwDw8ckmrlEXMKs1bVIg=
+github.com/merliot/device v0.0.0-20240306040259-f8186ea90301/go.mod h1:HUjKfNLGIZdwOeQpCJmofJjtKEvOjktjgIRTUwQ9Jnc=
 github.com/petermattis/goid v0.0.0-20180202154549-b0b1615b78e5/go.mod h1:jvVRKCrJTQWu0XVbaOlby/2lO20uSCHEMzzplHXte1o=
 github.com/petermattis/goid v0.0.0-20231207134359-e60b3f734c67 h1:jik8PHtAIsPlCRJjJzl4udgEf7hawInF9texMeO2jrU=
 github.com/petermattis/goid v0.0.0-20231207134359-e60b3f734c67/go.mod h1:pxMtw7cyUw6B2bRH0ZBANSPg+AoSud1I1iyJHI69jH4=
