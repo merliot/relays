@@ -3,8 +3,8 @@ module github.com/merliot/relays
 go 1.21.5
 
 require (
-	github.com/merliot/dean v0.0.0-20240301075820-e91242dd8159
-	github.com/merliot/device v0.0.0-20240311050402-554db872b5fd
+	github.com/merliot/dean v0.0.0-20240317004447-c998d95f1d2d
+	github.com/merliot/device v0.0.0-20240317004847-6c96c937785e
 )
 
 require (
@@ -12,10 +12,8 @@ require (
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
-	github.com/petermattis/goid v0.0.0-20231207134359-e60b3f734c67 // indirect
-	github.com/sasha-s/go-deadlock v0.3.1 // indirect
 	github.com/sigurn/crc8 v0.0.0-20220107193325-2243fe600f9f // indirect
-	github.com/warthog618/gpiod v0.8.2 // indirect
+	github.com/warthog618/gpiod v0.8.3 // indirect
 	gobot.io/x/gobot/v2 v2.3.0 // indirect
 	golang.org/x/crypto v0.21.0 // indirect
 	golang.org/x/mod v0.16.0 // indirect
