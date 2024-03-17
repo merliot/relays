@@ -55,8 +55,8 @@ jobs:
           tags: |
             type=raw,value=latest
           labels: |
-            org.opencontainers.image.title=Merliot Garage
-            org.opencontainers.image.description=Garage door opener controller
+            org.opencontainers.image.title=Merliot Relays
+            org.opencontainers.image.description=Relays device controls 1-4 relays using a microcontroller or SBC, such as Rapsberry Pi
 
       - name: Build and push Docker images
         uses: docker/build-push-action@v5
