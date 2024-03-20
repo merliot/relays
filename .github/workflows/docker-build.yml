@@ -54,8 +54,6 @@ jobs:
           images: |
             ${{ github.repository }}
             ghcr.io/${{ github.repository }}
-          tags: |
-            type=raw,value=latest
           labels: |
             org.opencontainers.image.title=Merliot Relays
             org.opencontainers.image.description=Relays device controls 1-4 relays using a microcontroller or SBC, such as Rapsberry Pi
