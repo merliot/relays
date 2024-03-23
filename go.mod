@@ -4,12 +4,11 @@ go 1.21.5
 
 require (
 	github.com/merliot/dean v0.0.0-20240319184459-ba1ddb67bf5e
-	github.com/merliot/device v0.0.0-20240321011137-c22ff9b34776
+	github.com/merliot/device v0.0.0-20240322214101-d34f72733652
 )
 
 require (
 	github.com/gofrs/uuid v4.4.0+incompatible // indirect
-	github.com/gomarkdown/markdown v0.0.0-20231222211730-1d6d20845b47 // indirect
 	github.com/google/shlex v0.0.0-20191202100458-e7afc7fbc510 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
