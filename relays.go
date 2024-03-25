@@ -1,7 +1,6 @@
 package relays
 
 import (
-	"embed"
 	"fmt"
 	"net/http"
 	"strconv"
@@ -10,9 +9,6 @@ import (
 	"github.com/merliot/device"
 	"github.com/merliot/device/relay"
 )
-
-//go:embed css go.mod html images js template
-var fs embed.FS
 
 const maxRelays int = 4
 
