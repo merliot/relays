@@ -9,10 +9,10 @@ github.com/hashicorp/errwrap v1.1.0 h1:OxrOeh75EUXMY8TBjag2fzXGZ40LB6IKw45YeGUDY
 github.com/hashicorp/errwrap v1.1.0/go.mod h1:YH+1FKiLXxHSkmPseP+kNlulaMuP3n2brvKWEqk/Jc4=
 github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+lD48awMYo=
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
-github.com/merliot/dean v0.0.0-20240329060554-08ba82e9a659 h1:x+aUkU/kkqs6ZxuJijk401TS9KwtMa1kXIcmVpbB0ko=
-github.com/merliot/dean v0.0.0-20240329060554-08ba82e9a659/go.mod h1:IV6M2XyDXo8F4JPPzOoETvADzo1YHTJOE2t/LDk2iog=
-github.com/merliot/device v0.0.0-20240329165820-c9a6b7079a74 h1:iEqvLX32adTZp9eBsVYPeDn80mzB07Gf/c5GlpMvjKA=
-github.com/merliot/device v0.0.0-20240329165820-c9a6b7079a74/go.mod h1:wn2oCi1u01N80PdUM9IH9qShRjXYhdP/EYXMnfkKgJc=
+github.com/merliot/dean v0.0.0-20240330145910-bdc95c8513db h1:y6u1hwbHgDP9dbi0ILInjlzC+5+YrBSs5chX1UfPk3w=
+github.com/merliot/dean v0.0.0-20240330145910-bdc95c8513db/go.mod h1:IV6M2XyDXo8F4JPPzOoETvADzo1YHTJOE2t/LDk2iog=
+github.com/merliot/device v0.0.0-20240330150300-77adcf1517f0 h1:YO4UjAEYeXf4qVVtQyCpu1o4x6g0sOGzX1SCTgv49Fs=
+github.com/merliot/device v0.0.0-20240330150300-77adcf1517f0/go.mod h1:A5mVRwqM6bdKygqlM9cYY5khISIMgBj99BQ/bXHlhSA=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
