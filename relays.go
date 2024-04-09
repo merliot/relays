@@ -26,7 +26,7 @@ type MsgClick struct {
 var targets = []string{"demo", "rpi", "nano-rp2040", "wioterminal"}
 
 func New(id, model, name string) dean.Thinger {
-	fmt.Println("NEW RELAYS")
+	fmt.Println("NEW RELAYS\r")
 	return &Relays{
 		Device: device.New(id, model, name, fs, targets).(*device.Device),
 		Relays: make([]relay.Relay, maxRelays),
