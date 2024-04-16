@@ -39,6 +39,7 @@ func (r *Relays) save(msg *dean.Msg) {
 
 func (r *Relays) getState(msg *dean.Msg) {
 	r.Path = "state"
+	r.parseParams()
 	msg.Marshal(r).Reply()
 }
 
@@ -69,23 +70,20 @@ func (r *Relays) ServeHTTP(w http.ResponseWriter, req *http.Request) {
 	r.API(w, req, r)
 }
 
-func (r *Relays) setRelay(num int, name, gpio string) {
-	relay := &r.Relays[num]
-	if name == "" {
-		name = fmt.Sprintf("Relay %d", num+1)
-	}
-	relay.Name = name
-	relay.Gpio = gpio
-	relay.Configure()
-}
-
 func (r *Relays) parseParams() {
 	for i := range r.Relays {
+		relay := &r.Relays[i]
 		num := strconv.Itoa(i + 1)
-		name := r.ParamFirstValue("relay" + num)
-		gpio := r.ParamFirstValue("gpio" + num)
-		if gpio != "" {
-			r.setRelay(i, name, gpio)
+		relay.Name = r.ParamFirstValue("relay" + num)
+		relay.Gpio = r.ParamFirstValue("gpio" + num)
+	}
+}
+
+func (r *Relays) configure() {
+	for i := range r.Relays {
+		relay := &r.Relays[i]
+		if relay.Name != "" && relay.Gpio != "" {
+			relay.Configure()
 		}
 	}
 }
@@ -93,4 +91,5 @@ func (r *Relays) parseParams() {
 func (r *Relays) Setup() {
 	r.Device.Setup()
 	r.parseParams()
+	r.configure()
 }

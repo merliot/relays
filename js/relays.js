@@ -26,7 +26,7 @@ class Relays extends WebSocketController {
 		for (let i = 0; i < 4; i++) {
 			let div = document.getElementById("relay" + i)
 			var relay = this.state.Relays[i]
-			if (relay.Gpio === "") {
+			if (relay.Name === "" || relay.Gpio === "") {
 				div.classList.replace("visibleFlex", "hidden")
 			} else {
 				this.setMouse(i)
@@ -37,8 +37,10 @@ class Relays extends WebSocketController {
 				havesome = true
 			}
 		}
+		let nodef = document.getElementById("nodef")
+		nodef.classList.replace("visible", "hidden")
 		if (!havesome) {
-			document.getElementById("nodef").classList.replace("hidden", "visible")
+			nodef.classList.replace("hidden", "visible")
 		}
 	}
 
@@ -46,7 +48,9 @@ class Relays extends WebSocketController {
 		if (this.viewMode === ViewMode.ViewFull) {
 			let div = document.getElementById("relay" + i)
 			div.onclick = () => {
-				this.relayClick(i)
+				if (this.state.Online) {
+					this.relayClick(i)
+				}
 			}
 		}
 	}

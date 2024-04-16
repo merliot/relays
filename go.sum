@@ -11,8 +11,8 @@ github.com/hashicorp/go-multierror v1.1.1 h1:H5DkEtf6CXdFp0N0Em5UCwQpXMWke8IA0+l
 github.com/hashicorp/go-multierror v1.1.1/go.mod h1:iw975J/qwKPdAO1clOe2L8331t/9/fmwbPZ6JB6eMoM=
 github.com/merliot/dean v0.0.0-20240412222937-26290ebe17d0 h1:M+Cm9jTOrHCJP/9BWXeG3d120KzjDxNIn7Phef7Qxpk=
 github.com/merliot/dean v0.0.0-20240412222937-26290ebe17d0/go.mod h1:IV6M2XyDXo8F4JPPzOoETvADzo1YHTJOE2t/LDk2iog=
-github.com/merliot/device v0.0.0-20240416060947-a65099986c70 h1:XWSO0sLJa+m6w8Jq5zbfQovJRND+m+Dvx+EzwVtfw2c=
-github.com/merliot/device v0.0.0-20240416060947-a65099986c70/go.mod h1:K+jLQUFMjXrnUdsxaQNDZ6MY2GD9ues9zK2Ure38R5I=
+github.com/merliot/device v0.0.0-20240416204131-8b4013f03c5b h1:ISnjYqJkl5TUd0TqccHExjE/hBNxtUie3LethfX6F9Q=
+github.com/merliot/device v0.0.0-20240416204131-8b4013f03c5b/go.mod h1:K+jLQUFMjXrnUdsxaQNDZ6MY2GD9ues9zK2Ure38R5I=
 github.com/pkg/errors v0.9.1 h1:FEBLx1zS214owpjy7qsBeixbURkuhQAwrK5UwLGTwt4=
 github.com/pkg/errors v0.9.1/go.mod h1:bwawxfHBFNV+L2hUp1rHADufV3IMtnDRdf1r5NINEl0=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
