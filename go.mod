@@ -4,7 +4,7 @@ go 1.22.0
 
 require (
 	github.com/merliot/dean v0.0.0-20240412222937-26290ebe17d0
-	github.com/merliot/device v0.0.0-20240416204131-8b4013f03c5b
+	github.com/merliot/device v0.0.0-20240416215905-c4b100f59d2a
 )
 
 require (
