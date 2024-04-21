@@ -2,6 +2,12 @@
 
 Relays device controls 1-4 relays using a microcontroller or SBC, such as Rapsberry Pi.
 
+### Demo
+
+Click image to try live demo.  Find the xx button to see how to build and deploy a relays device.
+
+[![](images/relays-01.png)](https://demo.merliot.net/relays-01/)
+
 ### Running
 
 There are two ways to run a relays device: standalone or in a hub.  For standalone, a [Docker](https://www.docker.com/) container can run the device.  Or we can run the device directly from source.
