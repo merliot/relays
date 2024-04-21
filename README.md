@@ -2,13 +2,21 @@
 
 Relays device controls 1-4 relays using a microcontroller or SBC, such as Rapsberry Pi.
 
+<div align="center">
+  
 ![](images/nano-rp2040-relays.png "Arduino Nano rp2040 Connect with 4 relays")
+
+</div>
 
 ## Demo
 
 Try the live [demo](https://demo.merliot.net/relays-01/).  Click the &#x1F4E5; button to see how to build and deploy a relays device.
 
+<div align="center">
+
 [![](images/relays-01.png)](https://demo.merliot.net/relays-01/)
+
+</div>
 
 ## Running on Merliot Hub
 
