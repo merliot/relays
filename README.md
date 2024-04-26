@@ -22,8 +22,6 @@ Try the live [demo](https://demo.merliot.net/relays-01/).  Click the &#x1F4E5; b
 
 A [Merliot Hub](https://github.com/merliot/hub) is the easiest way to run the relays device.
 
-
-
 ## Run Standalone with Docker
 
 ```
