@@ -1,25 +1,25 @@
-.relays {
+.model-relays .relays {
 	justify-content: space-evenly;
 	align-items: center;
 	min-height: 200px;
 }
 
-.tile .relays {
+.model-relays .tile .relays {
 	min-height: 120px;
 }
 
-.relay {
+.model-relays .relay {
 	align-items: center;
 }
 
-.relay-img {
+.model-relays .relay-img {
 	height: 100px;
 }
 
-.tile .relay-img {
+.model-relays .tile .relay-img {
 	height: 60px;
 }
 
-.tile .relay-name {
+.model-relays .tile .relay-name {
 	font-size: x-small;
 }
