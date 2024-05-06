@@ -33,19 +33,19 @@ func New(id, model, name string) dean.Thinger {
 	}
 }
 
-func (r *Relays) save(msg *dean.Msg) {
-	msg.Unmarshal(r).Broadcast()
+func (r *Relays) save(pkt *dean.Packet) {
+	pkt.Unmarshal(r).Broadcast()
 }
 
-func (r *Relays) getState(msg *dean.Msg) {
+func (r *Relays) getState(pkt *dean.Packet) {
 	r.Path = "state"
 	r.parseParams()
-	msg.Marshal(r).Reply()
+	pkt.Marshal(r).Reply()
 }
 
-func (r *Relays) click(msg *dean.Msg) {
+func (r *Relays) click(pkt *dean.Packet) {
 	var msgClick MsgClick
-	msg.Unmarshal(&msgClick)
+	pkt.Unmarshal(&msgClick)
 	relay := &r.Relays[msgClick.Relay]
 	relay.State = msgClick.State
 	if r.IsMetal() {
@@ -55,7 +55,7 @@ func (r *Relays) click(msg *dean.Msg) {
 			relay.Off()
 		}
 	}
-	msg.Broadcast()
+	pkt.Broadcast()
 }
 
 func (r *Relays) Subscribers() dean.Subscribers {

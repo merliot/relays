@@ -3,8 +3,8 @@ module github.com/merliot/relays
 go 1.22.0
 
 require (
-	github.com/merliot/dean v0.0.0-20240506031729-9a4e7385efe7
-	github.com/merliot/device v0.0.0-20240506033028-839836606d90
+	github.com/merliot/dean v0.0.0-20240506224258-77ace828707f
+	github.com/merliot/device v0.0.0-20240506224346-2ac7facc8985
 )
 
 require (
