@@ -31,11 +31,6 @@ class DeviceRelays extends DeviceBase {
 				havesome = true
 			}
 		}
-		let nodef = document.getElementById("nodef")
-		nodef.classList.replace("visible", "hidden")
-		if (!havesome) {
-			nodef.classList.replace("hidden", "visible")
-		}
 	}
 
 	setMouse(i) {
@@ -52,9 +47,9 @@ class DeviceRelays extends DeviceBase {
 	setRelayImg(relay, i) {
 		let image = document.getElementById("relay" + i + "-img")
 		if (relay.State) {
-			image.src = "images/relay-on.png"
+			image.src = this.assets + "images/relay-on.png"
 		} else {
-			image.src = "images/relay-off.png"
+			image.src = this.assets + "images/relay-off.png"
 		}
 	}
 
@@ -80,6 +75,6 @@ class DeviceRelays extends DeviceBase {
 		var relay = this.state.Relays[index]
 		relay.State = !relay.State
 		this.setRelayImg(relay, index)
-		this.send({Path: "click", Relay: index, State: relay.State})
+		this.send("click", {Relay: index, State: relay.State})
 	}
 }

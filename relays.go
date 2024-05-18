@@ -18,7 +18,6 @@ type Relays struct {
 }
 
 type MsgClick struct {
-	dean.ThingMsg
 	Relay int
 	State bool
 }
@@ -38,9 +37,8 @@ func (r *Relays) save(pkt *dean.Packet) {
 }
 
 func (r *Relays) getState(pkt *dean.Packet) {
-	r.Path = "state"
 	r.parseParams()
-	pkt.Marshal(r).Reply()
+	pkt.SetPath("state").Marshal(r).Reply()
 }
 
 func (r *Relays) click(pkt *dean.Packet) {
